@@ -194,6 +194,13 @@ This section provides a basic overview of the major components of this
 specification's architecture.
       </p>
 
+      <p class="issue" title="Resolution needs implementation">
+<a href="https://w3c-ccg.github.io/meetings/2021-05-27-vchttpapi/#resolution-1">
+RESOLUTION</a>: Adopt the three diagrams (issuer, verifier, and holder) as
+initial diagrams to be placed into the specification. It is expected that these
+diagrams will be iterated upon.
+      </p>
+
       <figure id="brief-architecture-overview">
         <img style="margin: auto; display: block; width: 75%;"
           src="diagrams/vc-http-api-architecture.svg" alt="
@@ -233,9 +240,39 @@ A <dfn>conforming VC HTTP API server</dfn> is ...
 
   <section>
     <h2>The VC HTTP API</h2>
+
+    <p class="issue" title="Resolution needs implementation">
+<a href="https://w3c-ccg.github.io/meetings/2021-06-22-vchttpapi/#resolution-2">
+RESOLUTION</a>: In general, the VC HTTP API style will conform to restfulapi.net
+guidelines and specifically use a 'controller' style for endpoints and will use
+JSON Schema to define the acceptable inputs to the APIs. Any deviation from
+these guidelines will be discussed in the group.
+    </p>
+
     <section>
       <h3>Authorization</h3>
       <p>
+      </p>
+
+      <p class="issue" title="Resolution needs implementation">
+<a href="https://w3c-ccg.github.io/meetings/2021-07-13-vchttpapi/#resolution-2">
+RESOLUTION</a>: One of the authorization mechanisms defined for the VC-HTTP-API
+MUST be OAuth 2 Bearer tokens.
+      </p>
+      <p class="issue" title="Resolution needs implementation">
+<a href="https://w3c-ccg.github.io/meetings/2021-07-13-vchttpapi/#resolution-3">
+RESOLUTION</a>: How a VC HTTP API server validates an authorization token is out
+of scope.
+      </p>
+      <p class="issue" title="Resolution needs implementation">
+<a href="https://w3c-ccg.github.io/meetings/2021-07-13-vchttpapi/#resolution-4">
+RESOLUTION</a>: One of the authorization protocols that will be defined for use
+in the VC-HTTP-API MUST be OAuth 2 Client Credentials.
+      </p>
+      <p class="issue" title="Resolution needs implementation">
+<a href="https://w3c-ccg.github.io/meetings/2021-07-13-vchttpapi/#resolution-5">
+RESOLUTION</a>: One of the authorization mechanisms defined for the VC HTTP API
+MUST be GNAP key-bound access tokens.
       </p>
     </section>
 
